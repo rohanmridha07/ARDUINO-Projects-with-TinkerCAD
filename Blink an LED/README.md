@@ -24,29 +24,34 @@ The circuit is designed to safely power an LED using a digital output pin on the
 
 The code uses two main functions: `setup()` and `loop()`. The `setup()` function runs once to configure pin 13 as an output. The `loop()` function then runs continuously, repeatedly turning the LED on (`HIGH`), pausing for 500ms, turning it off (`LOW`), and pausing again. This sequence creates the steady blinking effect.
 
-```
+**```cpp**
 // C++ code
+
 // Assign the LED to digital pin 13
 int LED = 13;
-void setup()
-{
-// Configure the pin as an output
-pinMode(LED, OUTPUT);
+
+void setup() {
+  // Configure the pin as an output
+  pinMode(LED, OUTPUT);
 }
-void loop()
-{
-// Turn the LED on (HIGH is the voltage level)
-digitalWrite(LED, HIGH);
-// Wait for 500 milliseconds
-delay(500);
-// Turn the LED off by making the voltage LOW
-digitalWrite(LED, LOW);
-// Wait for 500 milliseconds
-delay(500);
+
+void loop() {
+  // Turn the LED on (HIGH is the voltage level)
+  digitalWrite(LED, HIGH);
+  // Wait for 500 milliseconds
+  delay(500);
+  // Turn the LED off by making the voltage LOW
+  digitalWrite(LED, LOW);
+  // Wait for 500 milliseconds
+  delay(500);
 }
-```
+**```**
+
 ### ✨ Applications
-* Visual Indicators: Used as a status light to indicate power, a completed task, or an error state.
-* Debugging Tool: Programmers often blink an LED to visually confirm that a specific section of code is being executed.
-* Learning Foundation: Teaches the fundamental concepts of digital output, program loops, and basic circuit design.
-* Simple Signaling: Can be adapted to create signals, like a Morse code transmitter or a simple warning light.
+
+While simple, this project is the basis for many real-world applications, including:
+
+*   **Visual Indicators:** Used as a status light to indicate power, a completed task, or an error state.
+*   **Debugging Tool:** Programmers often blink an LED to visually confirm that a specific section of code is being executed.
+*   **Learning Foundation:** Teaches the fundamental concepts of digital output, program loops, and basic circuit design.
+*   **Simple Signaling:** Can be adapted to create signals, like a Morse code transmitter or a simple warning light.

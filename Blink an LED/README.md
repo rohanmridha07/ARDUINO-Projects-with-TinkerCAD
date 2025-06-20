@@ -25,12 +25,12 @@ The circuit is designed to safely power an LED using a digital output pin on the
 The code uses two main functions: `setup()` and `loop()`. The `setup()` function runs once to configure pin 13 as an output. The `loop()` function then runs continuously, repeatedly turning the LED on (`HIGH`), pausing for 500ms, turning it off (`LOW`), and pausing again. This sequence creates the steady blinking effect.
 
 ```
+
 int LED = 13;
 void setup()
 {
  pinMode(LED, OUTPUT);
 }
-
 void loop()
 {
 digitalWrite(LED, HIGH); // Turn the LED on (HIGH is the voltage level)
@@ -38,6 +38,7 @@ delay(500); // Wait for 500 milliseconds
 digitalWrite(LED, LOW); // Turn the LED off by making the voltage LOW
 delay(500); // Wait for 500 milliseconds
 }
+
 ```
 
 ### ✨ Applications

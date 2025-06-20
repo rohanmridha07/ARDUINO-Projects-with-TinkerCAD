@@ -30,19 +30,19 @@ The code uses two main functions: `setup()` and `loop()`. The `setup()` function
 int LED = 13;
 void setup()
 {
-  // Configure the pin as an output
-  pinMode(LED, OUTPUT);
+// Configure the pin as an output
+pinMode(LED, OUTPUT);
 }
 void loop()
 {
-  // Turn the LED on (HIGH is the voltage level)
-  digitalWrite(LED, HIGH);
-  // Wait for 500 milliseconds
-  delay(500);
-  // Turn the LED off by making the voltage LOW
-  digitalWrite(LED, LOW);
-  // Wait for 500 milliseconds
-  delay(500);
+// Turn the LED on (HIGH is the voltage level)
+digitalWrite(LED, HIGH);
+// Wait for 500 milliseconds
+delay(500);
+// Turn the LED off by making the voltage LOW
+digitalWrite(LED, LOW);
+// Wait for 500 milliseconds
+delay(500);
 }
 ```
 ### ✨ Applications

@@ -1,4 +1,6 @@
 // C++ code
+// Author: Rohan Mridha
+// EEE-23, KUET
 // Define the PWM pin connected to the LED
 int LEDpin = 11;
 void setup()

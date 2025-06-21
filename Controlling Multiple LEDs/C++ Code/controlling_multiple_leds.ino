@@ -1,3 +1,6 @@
+// C++ code
+// Author: Rohan Mridha
+// EEE-23, KUET
 // Define the analog pin for the potentiometer
 int pot = A5;
 

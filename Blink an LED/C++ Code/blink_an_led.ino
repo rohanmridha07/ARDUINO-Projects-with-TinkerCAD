@@ -1,3 +1,6 @@
+// C++ code
+// Author: Rohan Mridha
+// EEE-23, KUET
 int LED = 13;
 void setup()
 {

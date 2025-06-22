@@ -2,7 +2,7 @@
 // Author: Rohan Mridha
 // EEE-23, KUET
 // C++ code
-// Define pin numbers for clarity
+// Define pin numbers for clarity.
 int ledPin = 0;      // Physical Pin 5 (PB0)
 #define sensorPin A1 // Physical Pin 7 (PB2)
 
